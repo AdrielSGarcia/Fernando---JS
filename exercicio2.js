@@ -10,7 +10,7 @@ frm.addEventListener("submit", (e) => { //Utiliza da variável recém criada e e
     var n4 = Number(frm.inNota4.value); // Puxa o valor de InNota4 para a variável n4.
     var media = (n1+n2+n3+n4)/4; //Executa cálculo de média na variável com base nos 4 valores de nota criados anteriormente
 
-    if(media > 7){
+    if(media >= 7){
         resp.style.color = "blue";
         resp.innerText = `Olá ${nome}! - Suas notas resultam na seguinte média: ${media.toFixed(2)}, e felizmente você foi aprovado! :D`;
     }else if(media <= 6.9 && media >= 4){
